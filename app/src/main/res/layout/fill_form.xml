@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".FillForm">
+<!--    tools:showIn="@layout/activity_main">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="51dp">
+
+        <!--Select a branch- radioButton-->
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="GDG Admission Form"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="46dp"
+            android:hint="Enter your name"
+            android:textColor="#FFFFFF" />
+
+        <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </RadioGroup>
+
+        <Spinner
+            android:id="@+id/skillSpn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="166dp"
+            android:entries="@array/skill" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="508dp"
+            android:text="Why do you want to join GDG?"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/whyET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="222dp"
+            android:hint="Answer in less than 50 words"
+            android:maxLines="5"
+            android:minLines="5"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="350dp"
+            android:text="Age:"
+            android:textColor="#FFFFFF" />
+
+        <SeekBar
+            android:id="@+id/ageSB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="333dp"
+            android:max="100"
+            android:min="10" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="157dp"
+            android:layout_marginEnd="166dp"
+            android:layout_marginBottom="211dp"
+            android:background="#E91E63"
+            android:text="Submit" />
+
+        <CheckBox
+            android:id="@+id/consentCB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="272dp"
+            android:text="I agree with the terms and conditions of GDG."
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="121dp"
+            android:text="Select a Branch :"
+            android:id="@+id/branch"
+            android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/itRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="125dp"
+                android:layout_marginBottom="579dp"
+                android:text="IT"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+            android:id="@+id/cseRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="178dp"
+            android:layout_marginBottom="579dp"
+            android:text="CSE"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/ecRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="118dp"
+            android:layout_marginBottom="579dp"
+            android:text="EC"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
